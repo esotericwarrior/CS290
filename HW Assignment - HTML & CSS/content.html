@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>HW Assignment #1: HTML/CSS</title>
+  <!-- https://www.cssfontstack.com/Open-Sans -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+<section> <!-- Table Section -->
+<table border="1">
+<br>
+  <caption class="caption"> League of Legends: Season 8 - Statistics From My Last 6 Ranked Games (as of April 15, 2018)</caption>
+  <theader>
+      <th>  </th>
+      <th> Score</th>
+      <th> KDA</th>
+      <th> Kill Participation</th>
+      <th> CS</th>
+      <th> Result</th>
+  </theader>
+  <tbody>
+    <tr>
+      <td class="champion">Kha'zix</td>
+      <td class="score">5/6/11</td>
+      <td class="KDA">2.67:1</td>
+      <td class="kp">46%</td>
+      <td class="cs">187</td>
+      <td class="result">Victory</td>
+    </tr>
+    <tr>
+      <td class="champion">Zac</td>
+      <td class="score">0/0/3</td>
+      <td class="KDA">Perfect KDA</td>
+      <td class="kp">60%</td>
+      <td class="cs">83</td>
+      <td class="result">Defeat</td>
+    </tr>
+    <tr>
+      <td class="champion">Zac</td>
+      <td class="score">4/1/7</td>
+      <td class="KDA">11.00:1</td>
+      <td class="kp">37%</td>
+      <td class="cs">85</td>
+      <td class="result">Victory</td>
+    </tr>
+    <tr>
+      <td class="champion">Warwick</td>
+      <td class="score">1/2/4</td>
+      <td class="KDA">2.50:1</td>
+      <td class="kp">20%</td>
+      <td class="cs">94</td>
+      <td class="result">Victory</td>
+    </tr>
+        <tr>
+      <td class="champion">Zac</td>
+      <td class="score">8/4/8</td>
+      <td class="KDA">4.00:1</td>
+      <td class="kp">70%</td>
+      <td class="cs">146</td>
+      <td class="result">Defeat</td>
+    </tr>
+    <tr id="footer">
+      <td colspan="2"> Footer 1 </td>
+      <td colspan="4"> Footer 2</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<br />
+<!-- List Section -->
+<section> My Top 3 Takeaways
+<ol>
+  <li> My average Kill Participation over these 5 games is dreadfully low at  <strong>46.6%!</strong> I need to spend a lot more time trying to create a bigger impact on the game and stop relying so heavily on my teammates to make plays.</li>
+  <li> Although the length of each game isn't included in this table, my CS appears to be slightly above average for junglers in my elo, which is indicative of me being able to keep up in gold to remain relevant through all stages of the game.</li>
+  <li> My KDA on tank champions like Zac is excellent, suggesting that when I do participate in skirmishes and team fights, I generally perform well. However on bruiser champions like Warwick, or assassin types like Kha'zix, I don't appear to team fight very well. I should focus more on my positioning and skill in team fights on these types of champions.</li>
+</ol>
+</section>
+<br />
+<section> <!-- div section -->
+<div class="outer-content">
+  <div class="inner-content"> Currently Ranked Silver 1 with 1465 MMR = Gold V.
+  </div>
+</div>
+</section>
+<br />
+<section> <!-- GET form section --> 
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="GET">
+  <fieldset>
+    <legend>Some GET Data</legend>
+    <fieldset>
+      <label> Text goes here:
+          <input type="text" name="text_input">
+      </label>
+    </fieldset>
+    <fieldset> 
+      <label> Numbers go here:
+        <input type="number" name="numerical_input">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label> Password goes here:
+        <input type="password" name="password_input">
+      </label>
+    </fieldset>
+    <fieldset>
+    <p> Select a Candy </p>
+       <p>
+       <label>
+          <input type="radio" name="candy" value="Snickers"> Snickers </label>
+        <label>
+          <input type="radio" name="candy" value="Skittles"> Skittles
+        </label>
+        <label>
+          <input type="radio" name="candy" value="Mentos"> Mentos
+        </label>
+        </p>
+    </fieldset>
+    <p>
+    <input type="submit" value="Submit GET">
+    </p>
+    
+  </fieldset>
+</form>
+</section>
+<br />
+<section> <!-- POST form section --> 
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="POST">
+  <fieldset>
+    <legend>Some POST Data</legend>
+    <fieldset>
+      <label> Text goes here:
+          <input type="text" name="text_input">
+      </label>
+    </fieldset>
+    <fieldset> 
+      <label> Numbers go here:
+        <input type="number" name="numerical_input">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label> Password goes here:
+        <input type="password" name="password_input">
+      </label>
+    </fieldset>
+    <fieldset>
+    <p> Select a Candy </p>
+       <p>
+       <label>
+          <input type="radio" name="candy" value="Snickers"> Snickers </label>
+        <label>
+          <input type="radio" name="candy" value="Skittles"> Skittles
+        </label>
+        <label>
+          <input type="radio" name="candy" value="Mentos"> Mentos
+        </label>
+        </p>
+    </fieldset>
+    <p>
+    <input type="submit" value="Submit POST">
+    </p>
+    
+  </fieldset>
+</form>
+</section>
+ </body>
+</html>

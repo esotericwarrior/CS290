@@ -1,0 +1,123 @@
+/* Global Settings */
+html
+{
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+th
+{ 
+background-color: white
+}
+
+/* Body */
+body {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+/* Ordered List */
+p, li {
+  font-size: 12px;  
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* Table Caption */
+.caption
+{
+  font-style: bold;
+  font-size: 14px;
+}
+
+/* Footer */
+#footer
+{
+  background-color: white
+}
+
+/* Champion Class */
+tr td.champion
+{
+  font-style: italic;
+}
+
+/* Score Class */
+tr td.score
+{
+  color:red;
+}
+
+/* KDA Class */
+tr td.KDA
+{
+  color:black;
+}
+
+/* Kill Participation Class */
+tr td.kp
+{
+  color:blue;
+}
+
+/* CS Class */
+tr td.cs
+{
+  color:black;
+}
+
+/* Result Class */
+tr td.result
+{
+  font-style: italic;
+  color:darkgreen
+}
+
+/* Extra Credit */
+tr:nth-of-type(odd)
+{
+  background-color:lightgreen;
+}
+
+/* Extra Credit */
+tr:nth-of-type(even)
+{
+  background-color:lightblue;
+  color:black;
+}
+
+/* Table Formatting */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table Headers & Cells */
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+/* Outer Div */
+.outer-content
+{
+  background-color: pink;
+  buffer-top: 20px;
+  height: 3em;
+  width: 75%;
+}
+
+/* Inner Div */
+.inner-content
+{
+  background-color: lightblue;
+  width: 75%;
+  position: relative;
+  text-align: center;
+  color: black;
+  top: 1em;
+  left: 12.5%;
+}
