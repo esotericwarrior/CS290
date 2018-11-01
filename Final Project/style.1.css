@@ -1,0 +1,76 @@
+html, body, * {
+    font-family: Futura, Calibri, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 14pt;
+    color: #264C4C;
+}
+
+.fieldset-auto-width
+{
+display: inline-block;
+background-color: lightgray;
+padding: 10pt;
+}
+
+form {
+margin-left: auto;
+margin-right: auto;
+}
+
+.centered {
+margin: 10pt 0 10pt 0;
+text-align: center;
+vertical-align: middle;
+}
+
+#reset
+{
+font-size: 24pt;
+}
+
+#increment
+{
+    font-size: 46pt;
+}
+
+#resultsOutput
+{
+    font-family: "Helvetica",Consolas,Andale Mono,monospace;
+    font-size:46pt;
+}
+
+input[type="text"]
+{
+font-family: "Helvetica",Consolas,Andale Mono,monospace;
+font-style: normal;
+font-size: 18pt;
+width: 50pt;
+background-color: white;
+}
+
+input[type="submit"]
+{
+    margin-bottom: 10pt;
+    padding: 12pt;
+    width: 35%;
+    -webkit-appearance: none;
+}
+
+#table tr td:first-child {
+    text-align: right;
+}
+
+.odd {
+    background-color: grey;
+}
+
+#table td {
+    margin: 0;
+    padding: 0;
+    padding: 0 10pt;
+}
+
+#table {
+    margin-left: auto;
+    margin-right: auto;
+}

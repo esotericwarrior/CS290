@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Grade Calculator</title>
+
+    <link href="style.1.css" rel="stylesheet" type="text/css">
+
+    <h2 align="center">Grade Calculator</h2>
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <form id="form" align="center">
+
+        <fieldset class="fieldset-auto-width">
+
+            <!--<legend>Test</legend>-->
+
+            <!-- Number of Questions: <input id="questionCount" type="text" maxlength="3" onKeyPress="edValueKeyPress()" onKeyUp="edValueKeyPress()"> -->
+
+            Number of Questions: <input id="questionCount" type="text" maxlength="3" onkeyup="edValueKeyPress()"> &nbsp;&nbsp;
+
+            <!-- Number of Questions Wrong: <input name="wrongCount" id="wrongCount" type="text" maxlength="3" onKeyPress="wrongCountKeyPress()" onKeyUp="wrongCountKeyPress()"> -->
+
+            Number of Questions Wrong: <input name="wrongCount" id="wrongCount" type="text" maxlength="3" onkeyup="edValueKeyPress()">
+
+            <br>
+
+            <div class="centered">
+
+            </div>
+
+        </fieldset>
+
+    </form>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <!-- onsubmit = Execute a JavaScript when a form is submitted -->
+    <!-- "return false" cancels the default submit action(i.e. stops the submission of form)-->
+    <form id="form" align="center" onsubmit="return false">
+
+        <!--<fieldset class="fieldset-auto-width">-->
+        <label for="reset"></label>
+
+        <input type="submit" id="reset" value="Reset Number of Questions Wrong" onclick="resetWrong()">
+
+        <!--</fieldset>-->
+    </form>
+
+    </br>
+
+    </br>
+
+    </br>
+    <!-- onsubmit = Execute a JavaScript when a form is submitted -->
+    <!-- "return false" cancels the default submit action(i.e. stops the submission of form)-->
+
+    <form id="form" align="center" onsubmit="return false">
+
+        <!--<fieldset class="fieldset-auto-width">-->
+
+        <label for="plusWrong"></label>
+
+        <input type="submit" id="increment" value="+1 Wrong" onclick="wrongCountKeyPress()">
+        <label for="plusRight"></label>
+        <input type="submit" id="increment" value="+1 Right" onclick="rightCountKeyPress()">
+        <!--</fieldset>-->
+
+    </form>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <form id="form" align="center">
+
+        <fieldset class="fieldset-auto-width">
+
+            <span id="resultsOutput" style="center">Results: </span>
+        </fieldset>
+        <br>
+        <p id="message"></p>
+        <br> Show Grade Chart: <input type="checkbox" id="chartCheck" onclick="showChart()"> Show Decimals: <input type="checkbox" id="decimalCheck" onclick="showDecimal()">
+    </form>
+    <table id="table" style="display:none" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+            <tr>
+                <td class="header"># Wrong</td>
+                <td class="header">Grade</td>
+        </tbody>
+    </table>
+
+</html>

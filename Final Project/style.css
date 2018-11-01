@@ -1,0 +1,188 @@
+.navbar, header .container .intro-text .name {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-custom {
+	background: #6e1011;
+	font-weight: 700;
+	border: none
+}
+
+.navbar-custom .navbar-nav {
+    letter-spacing: 1px;
+}
+
+/* When hovering over the links on the navigation bar*/
+.navbar-nav li a:hover {
+    color: white !important;
+}
+
+.navbar-nav > li {
+    padding-left:30px;
+    padding-right:10px;
+}
+
+.container .intro-text .name {
+    font-size: 4.75em;
+    display: block;
+    font-weight: 500;
+    color: white;
+}
+
+.index {
+    	background-image: url("code.jpg")
+}
+
+body {
+	text-align: center;
+	background: #fcfcfa;
+	color: #818078;
+	font-family: Futura, sans-serif;;
+}
+
+body .intro-text .someText1 {
+	font-size: 1.2em;
+	font-weight: 200
+}
+
+
+body .intro-text .someText2 {
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+}
+
+.resize {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+
+someText2 {
+    text-align: center;
+    color: white;
+}
+
+.container {
+	max-width: 50%;
+	margin: 40px;
+}
+
+    .hr-text {
+	line-height: 1em;
+	position: relative;
+	outline: 0;
+	border: 0;
+	color: black;
+	text-align: center;
+	height: 1.5em;
+	opacity: .5;
+}
+	.hr-text:before {
+		content: '';
+		/*use the linear-gradient for the fading effect*/
+		/*use a solid background color for a solid bar*/
+		background: linear-gradient(to right, transparent, #818078, transparent);
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		height: 1px;
+	}
+	.hr-text:after {
+		content: attr(data-content);
+		position: relative;
+		display: inline-block;
+		color: black;
+		padding: 0 .5em;
+		line-height: 1.5em;
+		/*// this is really the only tricky part, you need to specify the background color of the container element...*/
+		color: #818078;
+		background-color: #fcfcfa;
+	}
+
+/*Scroll Box*/
+div.ex3 {
+    background-color: lightgrey;
+    /*width: 500px;*/
+    width: 33.33333%;
+    height: 100px;
+    overflow: scroll;
+    margin: auto;
+}
+
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/*Carousel Styling*/
+.c-wrapper{
+    width: 50%; /* for example */
+    margin: auto;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; /* use this, or not */
+margin: auto;
+}
+
+
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+
+/*Download*/
+.button {
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Resume*/
+#resume-container {
+    text-align: center;
+}
+
+div {
+    display: block;
+}
+
+#resume {
+    width: 65%;
+}
+
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+
