@@ -1,0 +1,36 @@
+fieldset {
+	display: inline-block;
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid green;
+  color:green;
+  font-size:90%;
+  text-align:center;
+  }
+
+input.selected {
+    border-color:lightgreen;
+}
+
+/*TABLE SETTINGS*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /*border-collapse: separate;*/
+    width: 70%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    /*padding: 8px;*/
+    padding: 5;
+    border-spacing: 2;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
